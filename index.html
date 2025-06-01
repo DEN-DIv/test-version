@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>перша версія</title>
+    <link rel="stylesheet" href="./test-1.css">
+    <script src="https://cdn.auth0.com/js/auth0-spa-js/2.0/auth0-spa-js.production.js"></script>
+</head>
+<body>
+
+    <button id="btn-login">Test login</button>
+
+    <h2>Ваш унікальний образ:</h2>
+    
+    <div class="controls">
+        <label>голова<input type="color" id="color1" value="#ff0000"></label>
+        <label>тіло<input type="color" id="color2" value="#00ff00"></label>
+        <label>ноги<input type="color" id="color3" value="#0000ff"></label>
+    </div>
+
+    <div id="elementToDownload" class="container">
+        <div class="block" id="block1" style="background: #ff0000;"></div>
+        <div class="block" id="block2" style="background: #00ff00;"></div>
+        <div class="block" id="block3" style="background: #0000ff;"></div>
+    </div>
+
+    <button onclick="downloadElement()">Завантажити елемент</button>
+    <hr>
+        <h3>Вставити свій образ</h3>
+        <input type="file" id="fileInput" accept=".html">
+        <button onclick="insertSavedElement()">Вставити елемент</button>
+       <div id="importedElementContainer" class="container"></div>
+        
+    <script src="./test-1.js"></script>
+</body>
+</html>
